@@ -1,0 +1,53 @@
+{
+  "name": "react-stripe-checkout-legacy",
+  "version": "0.0.1",
+  "description": "Integrate legacy version of Stripe Checkout into a React app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azmenak/react-stripe-checkout-legacy"
+  },
+  "scripts": {
+    "test": "jest",
+    "version": "npx @pika/pack"
+  },
+  "keywords": [
+    "react",
+    "stripe",
+    "checkout",
+    "legacy",
+    "typescript",
+    "esm",
+    "pika"
+  ],
+  "author": "Adam Zmenak <adam.zmenak@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@pika/pack": "^0.5.0",
+    "@pika/plugin-build-node": "^0.9.2",
+    "@pika/plugin-build-web": "^0.9.2",
+    "@pika/plugin-ts-standard-pkg": "^0.9.2",
+    "@pika/types": "^0.9.2",
+    "@types/jest": "^25.2.1",
+    "jest": "^25.3.0",
+    "ts-jest": "^25.3.1",
+    "typescript": "^3.8.3"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-ts-standard-pkg",
+        {
+          "exclude": [
+            "*.spec.*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ]
+    ]
+  }
+}

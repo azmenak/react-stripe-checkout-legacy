@@ -1,6 +1,6 @@
 {
   "name": "react-stripe-checkout-legacy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Integrate legacy version of Stripe Checkout into a React app",
   "repository": {
     "type": "git",

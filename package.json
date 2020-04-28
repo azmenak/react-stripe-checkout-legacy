@@ -7,7 +7,7 @@
     "url": "https://github.com/azmenak/react-stripe-checkout-legacy"
   },
   "scripts": {
-    "test": "jest",
+    "test": "echo 'No Tests Yet'",
     "version": "npx @pika/pack"
   },
   "keywords": [
